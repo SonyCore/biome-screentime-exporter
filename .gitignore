@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.venv/
+.DS_Store
+*.csv
+*.jsonl
+state.json

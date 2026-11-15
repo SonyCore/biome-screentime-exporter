@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "biome-screentime"
+version = "0.1.0"
+description = "Export Apple Screen Time (Biome App.InFocus streams) from macOS as app sessions: this Mac and synced iPhone/iPad."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "SonyCore" }]
+requires-python = ">=3.9"
+dependencies = []          # standard library only
+keywords = ["screen time", "biome", "macos", "segb", "app usage", "quantified self"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS",
+    "Topic :: Utilities",
+]
+
+[project.scripts]
+biome-screentime = "biome_screentime.cli:main"
+
+[project.urls]
+Repository = "https://github.com/SonyCore/biome-screentime-exporter"
+
+[tool.setuptools.packages.find]
+where = ["src"]
